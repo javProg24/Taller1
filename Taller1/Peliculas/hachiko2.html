@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Centro de entretenimiento de Cine">
+    <meta name="author" content="Jean Romero">
+    <meta name="keywords" content="Cine, Pelicula, Hachiko, Todo publico, Perro, Triste">
+    <title>Hachiko 2</title>
+</head>
+<header>
+    <h1>Hachiko 2</h1>
+</header>
+<body>    
+    <nav>
+        <a href="/Taller1/index.html">Cartelera</a> | |
+        <a href="https://www.multicines.com.ec/categories">Dulceria</a> |
+        <a href="https://www.multicines.com.ec/profile">Perfil</a>
+    </nav>
+    <hr>
+    <br>
+    <main>
+        <article>
+            
+            <header>
+                <h2>Sinopsis</h2>
+                <p>Hecho por <strong>Jean Romero</strong></p>
+            </header>
+            <section>
+                <h3>Descripcion</h3>
+                <p> Hachiko es un lindo perro pastor chino. Conoce a su dueño Chen Jingxiu entre la gran multitud y se convierte en 
+                    miembro de la familia Chen. Con el paso del tiempo, la casa que alguna vez fue hermosa ya no está allí, pero 
+                    Batong espera y espera, sabiendo que su destino está estrechamente ligado a su familia.</p>
+            </section>
+            <section>
+                <h3>Categoria de la pelicula</h3>
+                <p>Familia| Todo publico</p>
+            </section>
+            <section>
+                <h3>Precio</h3>
+                <p>10$</p>
+            </section>
+            <section>
+                <h3>Tiempo de la pelicula</h3>
+                <p>135 minutos</p>
+            </section>
+            <section>
+                <h3>Imagen de la pelicula</h3>
+                <img style="width: 300px; height: 350px;" src="/Taller1/Recursos/Hachiko2/HO00001095.jpg" alt="Hachiko2">
+            </section>
+            <br>
+            <section>
+                <h3>Trailer de la pelicula</h3>
+                <iframe
+                src="https://www.youtube.com/embed/FG3otWl6uKc?si=Vxz2jFIBza3nVvo3" 
+                frameborder="0" allowfullscreen>
+            </iframe>
+            </section>
+            <br>     
+            <img id="hachiko" src="/Taller1/Recursos/Hachiko2/shiba-shiba-inu.gif" style="cursor: pointer;" onclick="playAudio()">
+            <p><strong>Clickea a Hachiko!</strong></p>      
+            <footer>
+                <p>Comentarios: 15 | Me gusta: 45</p>
+            </footer>   
+        </article>
+    </main>
+    <audio id="audio" src="/Taller1/Recursos/Hachiko2/Woof hachiko.mp3"></audio>
+    <script>
+        function playAudio() {
+            var audio = document.getElementById('audio')
+            audio.play();
+        }
+    </script>
+
+
+<footer>
+    <address>    
+    Multicines<br>
+    <a href="tel:023 934 187">023 934 187</a><br>
+    <a href="mailto:serviciocliente@multicines.com.ec">serviciocliente@multicines.com.ec</a><br>
+    </address>
+    <hr>
+    <span class="Redes">
+        Redes Sociales<br>
+        <a href="https://www.youtube.com/channel/UCOcgQO4X4Bcy8lfVR6qeYOQ">YouTube</a>
+        <a href="https://www.instagram.com/multicines.ec/?utm_source=ig_profile_share&igshid=2dcgvyspmnpy">Instragram</a>
+    </span>
+</footer>
+
+</body>
+</html>
