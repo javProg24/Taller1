@@ -8,6 +8,7 @@
 }
 .footer-background{
     background-color: #181A20;
+    box-sizing: inherit;
     
 }
 th, #inicio{
@@ -22,6 +23,11 @@ th, #inicio{
     width: 300px; 
     height: 350px; 
     border: 3px solid #7492A3;
+}
+.container{
+    display: grid;
+    border-top: 2px solid #292C38;
+    
 }
 .white{
     color: #fff;
