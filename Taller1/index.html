@@ -6,32 +6,31 @@
     <meta name="description" content="Centro de entretenimiento de Cine">
     <meta name="author" content="GRUPO 1">
     <meta name="keywords" content="Cine">
-    <title>Multicines</title>
-    <style>
-        table, th, td {
-          border:1px solid black;
-        }
-    </style>
+    <!-- Esto es para añadir un nuevo font en este caso Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/style.css"/>
     <title>Multicines</title> 
 </head>
 <header>
-    <h1>INICIO</h1>
+    <h1 class="white" id="inicio">INICIO</h1>
 </header>
     <nav>
-        <a href="/Taller1/index.html">Cartelera</a> |
-        <a href="https://www.multicines.com.ec/categories">Dulceria</a> |
-        <a href="https://www.multicines.com.ec/profile">Perfil</a>
+        <a class="white" id="amarillo" href="/index.html">Cartelera</a> |
+        <a class="white" href="https://www.multicines.com.ec/categories">Dulceria</a> |
+        <a class="white" href="https://www.multicines.com.ec/profile">Perfil</a>
     </nav>
     <br>
     <table style="width: 50%">
         <tr>
-            <th>Cartelera</th>
-            <th>Trailer</th>
+            <th class="white" class="tabla">Cartelera</th>
+            <th class="white" class="tabla">Trailer</th>
         </tr>
         <tr>
             <td> 
-                <a href="/Taller1/Peliculas/intensamente2.html"> 
-                    <img src="/Taller1/Recursos/Intensamente/Intensamente.jpg" width="150" height="200">
+                <a href="/Peliculas/intensamente2.html"> 
+                    <img src="/Recursos/Intensamente/Intensamente.jpg" width="150" height="200">
                 </a> 
             </td>
             <td>
@@ -43,8 +42,8 @@
         </tr>
         <tr>
             <td> 
-                <a href="/Taller1/Peliculas/Amigos Imaginarios.html"> 
-                    <img src="/Taller1/Recursos/Amigos Imaginarios/Cartel_Amigos.jpg" width="150" height="200">
+                <a href="/Peliculas/Amigos Imaginarios.html"> 
+                    <img src="/Recursos/Amigos Imaginarios/Cartel_Amigos.jpg" width="150" height="200">
                 </a> 
             </td>
             <td>
@@ -56,8 +55,8 @@
         </tr>
         <tr>
             <td>
-                <a href="/Taller1/Peliculas/mokey.html"> 
-                    <img src="/Taller1/Recursos/Monkey/Monkey Man.jpg" width="150" height="200">
+                <a href="/Peliculas/mokey.html"> 
+                    <img src="/Recursos/Monkey/Monkey Man.jpg" width="150" height="200">
                 </a>
             </td>
             <td>
@@ -69,13 +68,39 @@
         </tr>
         <tr>
             <td>
-                <a href="/Taller1/Peliculas/Garfield.html">
-                    <img src="/Taller1/Recursos/Garfield/Garfield.jpg" width="150" height="200">
+                <a href="/Peliculas/Garfield.html">
+                    <img src="/Recursos/Garfield/Garfield.jpg" width="150" height="200">
                 </a>
             </td>
             <td>
                 <iframe 
                     src="https://www.youtube.com/embed/6aeM7hfhmyM" 
+                    frameborder="0" allowfullscreen>
+                </iframe>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="/Peliculas/badboys.html"> 
+                    <img src="/Recursos/BadBoys/BAD BOYS.jpg" width="150" height="200">
+                </a>
+            </td>
+            <td>
+                <iframe 
+                    src="https://www.youtube.com/embed/hRFY_Fesa9Q" 
+                    frameborder="0" allowfullscreen>
+                </iframe>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="/Peliculas/hachiko2.html"> 
+                    <img src="/Recursos/Hachiko2/Hachiko_2.jpg" width="150" height="200">
+                </a>
+            </td>
+            <td>
+                <iframe 
+                    src="https://www.youtube.com/embed/8LP2fk2PkhA" 
                     frameborder="0" allowfullscreen>
                 </iframe>
             </td>
