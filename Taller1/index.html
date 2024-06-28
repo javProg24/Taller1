@@ -7,106 +7,164 @@
     <meta name="author" content="GRUPO 1">
     <meta name="keywords" content="Cine">
     <!-- Esto es para añadir un nuevo font en este caso Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/Taller1/CSS/style.css"/>
+    
+    <link rel="stylesheet" href="./CSS/pag.css"/>
     <title>Multicines</title> 
+
+    <style>
+ 
+
+    </style>
 </head>
 <header>
-    <h1 class="white" id="inicio">INICIO</h1>
+   
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="#" class="logo">
+                    Cinepl<span class="main-color">i</span>x
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#">CARTELERA</a></li>
+                    <li><a href="#">DULCES</a></li>
+                    <li><a href="#">ESTRENOS</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
-    <nav>
-        <a class="white" id="amarillo" href="/index.html">Cartelera</a> |
-        <a class="white" href="https://www.multicines.com.ec/categories">Dulceria</a> |
-        <a class="white" href="https://www.multicines.com.ec/profile">Perfil</a>
-    </nav>
-    <br>
-    <table style="width: 50%">
-        <tr>
-            <th class="white" class="tabla">Cartelera</th>
-            <th class="white" class="tabla">Trailer</th>
-        </tr>
-        <tr>
-            <td> 
-                <a href="/Taller1/Peliculas/intensamente2.html"> 
-                    <img src="/Taller1/Recursos/Intensamente/Intensamente.jpg" width="150" height="200">
-                </a> 
-            </td>
-            <td>
-                <iframe
-                    src="https://www.youtube.com/embed/fjDtKt2AJXc" 
-                    frameborder="0" allowfullscreen>
-                </iframe>
-            </td>
-        </tr>
-        <tr>
-            <td> 
-                <a href="/Taller1/Peliculas/Amigos Imaginarios.html"> 
-                    <img src="/Taller1/Recursos/Amigos Imaginarios/Cartel_Amigos.jpg" width="150" height="200">
-                </a> 
-            </td>
-            <td>
-                <iframe
-                    src="https://www.youtube.com/embed/suxpHwb9A3c" 
-                    frameborder="0" allowfullscreen>
-                </iframe>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="/Peliculas/mokey.html"> 
-                    <img src="/Taller1/Recursos/Monkey/Monkey Man.jpg" width="150" height="200">
-                </a>
-            </td>
-            <td>
-                <iframe 
-                    src="https://www.youtube.com/embed/P_UKoXgv144" 
-                    frameborder="0" allowfullscreen>
-                </iframe>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="/Peliculas/Garfield.html">
-                    <img src="/Taller1/Recursos/Garfield/Garfield.jpg" width="150" height="200">
-                </a>
-            </td>
-            <td>
-                <iframe 
-                    src="https://www.youtube.com/embed/6aeM7hfhmyM" 
-                    frameborder="0" allowfullscreen>
-                </iframe>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="/Peliculas/badboys.html"> 
-                    <img src="/Taller1/Recursos/BadBoys/BAD BOYS.jpg" width="150" height="200">
-                </a>
-            </td>
-            <td>
-                <iframe 
-                    src="https://www.youtube.com/embed/hRFY_Fesa9Q" 
-                    frameborder="0" allowfullscreen>
-                </iframe>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="/Peliculas/hachiko2.html"> 
-                    <img src="/Taller1/Recursos/Hachiko2/HO00001095.jpg" width="150" height="200">
-                </a>
-            </td>
-            <td>
-                <iframe 
-                    src="https://www.youtube.com/embed/8LP2fk2PkhA" 
-                    frameborder="0" allowfullscreen>
-                </iframe>
-            </td>
-        </tr>
-    </table>  
-<div class="footer-background">
+
+<h1 class="white" >Estrenos recientes</h1>
+<table>
+    <tr>
+        <td>
+            <div class="top-peliculas-slide">
+                <div class="owl-carousel" id="top-peliculas-slide">
+                    <!-- PELICULA ITEM (BAD BOYS)-->
+                    <div class="pelicula-item">
+                        <img src="./Recursos/BadBoys/BAD BOYS.jpg" alt="">
+                        <div class="pelicula-item-content" >
+                            <div class="pelicula-item-title">
+                                Bad Boys
+                            </div>
+                            <div class="pelicula-infos">
+                                <div class="pelicula-info">
+                                    <i class="bx bxs-star"></i>
+                                    <span>9.5</span>
+                                </div>
+                                <div class="pelicula-info">
+                                    <i class="bx bxs-time"></i>
+                                    <span>120 mins</span>
+                                </div>
+                                <div class="pelicula-info">
+                                    <span>HD</span>
+                                </div>
+                                <div class="pelicula-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+        <td>
+            <!-- PELICULA ITEM (GARFIEL)-->
+            <div class="pelicula-item">
+                <img src="./Recursos/Garfield/Garfield.jpg" alt="">
+                <div class="pelicula-item-content">
+                    <div class="pelicula-item-title">
+                        Garfield
+                    </div>
+                    <div class="pelicula-infos">
+                        <div class="pelicula-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="pelicula-info">
+                            <i class="bx bxs-time"></i>
+                            <span>120 mins</span>
+                        </div>
+                        <div class="pelicula-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="pelicula-info">
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+<h1> Familiar</h1>
+<table>
+    <tr>
+        <td>
+            <div class="top-peliculas-slide">
+                <div class="owl-carousel" id="top-peliculas-slide">
+                    <!-- PELICULA ITEM (BAD BOYS)-->
+                    <div class="pelicula-item">
+                        <img src="./Recursos/BadBoys/BAD BOYS.jpg" alt="">
+                        <div class="pelicula-item-content" >
+                            <div class="pelicula-item-title">
+                                Bad Boys
+                            </div>
+                            <div class="pelicula-infos">
+                                <div class="pelicula-info">
+                                    <i class="bx bxs-star"></i>
+                                    <span>9.5</span>
+                                </div>
+                                <div class="pelicula-info">
+                                    <i class="bx bxs-time"></i>
+                                    <span>120 mins</span>
+                                </div>
+                                <div class="pelicula-info">
+                                    <span>HD</span>
+                                </div>
+                                <div class="pelicula-info">
+                                    <span>16+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+        <td>
+            <!-- PELICULA ITEM (GARFIEL)-->
+            <div class="pelicula-item">
+                <img src="./Recursos/Garfield/Garfield.jpg" alt="">
+                <div class="pelicula-item-content">
+                    <div class="pelicula-item-title">
+                        Garfield
+                    </div>
+                    <div class="pelicula-infos">
+                        <div class="pelicula-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="pelicula-info">
+                            <i class="bx bxs-time"></i>
+                            <span>120 mins</span>
+                        </div>
+                        <div class="pelicula-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="pelicula-info">
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+<div class="footer.section">
     <footer>
     <address>    
     Multicines<br>
