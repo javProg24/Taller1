@@ -6,65 +6,57 @@
     <meta name="description" content="Centro de entretenimiento de Cine">
     <meta name="author" content="Jean Romero">
     <meta name="keywords" content="Cine, Pelicula, BadBoys, Publico, Armas">
-    <link rel="stylesheet" href="/Taller1/CSS/style.css"/>
+    <link rel="stylesheet" href="../styles/pag.css">
     <title>Bad Boy 4</title>
 </head>
 <header>
-    <h1 class="white">Bad Boys 4</h1>
 </header>
 <body>    
-    <nav>
-        <a href="/Taller1/index.html" id="amarillo">Cartelera</a> | |
-        <a href="https://www.multicines.com.ec/categories">Dulceria</a> |
-        <a href="https://www.multicines.com.ec/profile">Perfil</a>
-    </nav>
-    <hr>
-    <br>
-    <main>
-        <article>
-            
-            <header>
-                <h2 class="gray">Sinopsis</h2>
-                <p class="white">Hecho por <strong>Jean Romero</strong></p>
-            </header>
-            <section>
-                <h3 class="gray">Descripcion</h3>
-                <p class="white"> Los policías más famosos del mundo regresan con su icónica mezcla de acción al límite y comedia escandalosa, 
+</head>
+<header>
+   
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="#" class="logo">
+                    Cinepl<span class="main-color">i</span>x
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#">CARTELERA</a></li>
+                    <li><a href="#">DULCES</a></li>
+                    <li><a href="#">ESTRENOS</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero__description">
+        <div class="description-left">
+            <h1 class="white">Bad Boys 4</h1>
+            <img class="image" src="../Recursos/BadBoys/BAD BOYS.jpg" alt="BadBoys">
+        </div>
+        <div class="description__right">
+            <h1>Sinopsis</h1>
+                <h3>Descripcion</h3>
+                <p> Los policías más famosos del mundo regresan con su icónica mezcla de acción al límite y comedia escandalosa, 
                     pero esta vez con un giro inesperado: ¡Los mejores de Miami se dan a la fuga! Cuarta entrega de la saga 'Dos 
                     policías rebeldes'</p>
-            </section>
-            <section>
-                <h3 class="gray">Categoria de la pelicula</h3>
-                <p class="white">Acción | 12 años</p>
-            </section>
-            <section>
-                <h3 class="gray">Precio</h3>
-                <p class="white">10$</p>
-            </section>
-            <section>
-                <h3 class="gray">Tiempo de la pelicula</h3>
-                <p class="white">120 minutos</p>
-            </section>
-            <section>
-                <h3 class="gray">Imagen de la pelicula</h3>
-                <img class="image" src="/Taller1/Recursos/BadBoys/BAD BOYS.jpg" alt="BadBoys">
-            </section>
-            <br>
-            <section>
-                <span style="color: blue; cursor: pointer;" onclick="playAudio()"><strong>Click me</strong></span>
-            </section>
-            <section>
-                <h3 class="gray">Trailer de la pelicula</h3>
-                <iframe
+                    <h3>Categoria de la pelicula</h3>
+                <p>Acción | 12 años</p>
+                <h3>Precio</h3>
+                <p>10$</p>
+                <h3>Tiempo de la pelicula</h3>
+                <p>120 minutos</p>
+                <h3>Trailer de la pelicula</h3>
+                <iframe class="iframe"
                 src="https://www.youtube.com/embed/FG3otWl6uKc?si=Vxz2jFIBza3nVvo3" 
                 frameborder="0" allowfullscreen>
-            </iframe>
-            </section>
-            <br>           
-            <footer>
-                <p class="white">Comentarios: 20 | Me gusta: 30</p>
-            </footer>   
-        </article>
+        </div>
+    </div>
     </main>
     <audio id="audio" src="/Taller1/Recursos/BadBoys/BadBoys.mp3"></audio>
     <script>
