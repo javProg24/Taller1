@@ -10,44 +10,40 @@
     <!-- Esto es para añadir un nuevo font en este caso Inter -->
     
     <link rel="stylesheet" href="./styles/pag.css"/>
+    <link rel="stylesheet" href="./styles/style_pag_pie.css"/>
     <title>Multicines</title> 
-    <style>
 
-    </style>
 </head>
-<header>
-   
-    <div class="nav-wrapper">
-        <div class="container">
-            <div class="nav">
-                <a href="#" class="logo">
-                    Cinepl<span class="main-color">i</span>x
-                </a>
-                <ul class="nav-menu" id="nav-menu">
-                    <li><a href="#">CARTELERA</a></li>
-                    <li><a href="#">DULCES</a></li>
-                    <li><a href="#">ESTRENOS</a></li>
-                    <li><a href="#">Sobre Nosotros</a></li>
-                </ul>
+<body>
+    <section class="hero">
+        <header class="hero_header">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <div class="h_header">
+                        <a href="#index" class="logo">
+                            Cinepl<span class="main-color">i</span>x
+                        </a>
+                        <ul class="nav-menu" id="nav-menu">
+                            <li><a href="#">CARTELERA</a></li>
+                            <li><a href="#">DULCES</a></li>
+                            <li><a href="#">ESTRENOS</a></li>
+                            <li><a href="#">Sobre Nosotros</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-          </div>
-        </div>
-      </header>
+        </header>
     </section>
-    <div class="top-peliculas-slide">
-      <section class="hero_main">
+    <section class="hero_main">
         <div class="hero_estreno">
-          <div class="hero_text">
-            <h2>Compra tus tickets ya!</h2>
-          </div>
+            <div class="hero_text">
+                <h3>Compra tus tickets ya!</h3>
+            </div>
         </div>
-      </section>
-    </div>
-
-    <h1>Bienvenido</h1>
-    
-    <h2>Estrenos Recientes</h2>
+    </section>
+<br>
+    <h1 >Bienvenidos</h1>
+    <h3>Estrenos Recientes</h2>
     <table>
       <tr>
         <td>
@@ -157,7 +153,7 @@
       </tr>
     </table>
 
-    <h2>Familiar</h2>
+    <h3>Todo Público</h2>
     <table>
       <tr>
         <td>
@@ -271,26 +267,57 @@
     </table>
 
     <div class="footer.section">
-      <footer>
-        <address>
-          Cineplix<br />
-          <a href="tel:023 934 187">023 934 187</a><br />
-          <a href="mailto:serviciocliente@multicines.com.ec"
-            >serviciocliente@multicines.com.ec</a
-          ><br />
-        </address>
-        <hr />
-        <span class="Redes">
-          <p>Redes Sociales</p>
-          <a href="https://www.youtube.com/channel/UCOcgQO4X4Bcy8lfVR6qeYOQ"
-            >YouTube</a
-          >
-          <a
-            href="https://www.instagram.com/multicines.ec/?utm_source=ig_profile_share&igshid=2dcgvyspmnpy"
-            >Instragram</a
-          >
-        </span>
-      </footer>
+    <!--Footer o pie de pagina-->
+    <footer class="footer">
+        <ul class="social-icon">
+            <li class="icon-elem">
+                <a href="" class="icon">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="" class="icon">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="" class="icon">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+        </ul>
+        <ul class="menu">
+            <li class="menu-elem">
+                <a href="" class="menu-icon"> 
+                    Cinepl<span class="main-color">i</span>x
+                </a>
+            </li>
+            <li class="menu-elem">
+                <a href="" class="menu-icon"> 
+                    Equipo
+                </a>
+            </li>
+            <li class="menu-elem">
+                <a href="" class="menu-icon"> 
+                    Contactanos
+                </a>
+            </li>
+            <li class="menu-elem">
+                <a href="" class="menu-icon"> 
+                    Sobre nosotros
+                </a>
+            </li>
+        </ul>
+        <p class="text">@Año | Todos los derechos reservados</p>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     </div>
   </body>
 </html>
