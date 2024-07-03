@@ -7,7 +7,10 @@
     --nav-height: 60px;
     --space-top: 30px;
 }
-
+section:not(:last-of-type) {
+    position: relative; /* Permite el posicionamiento relativo */
+    bottom: 50px; /* Ubica la sección en la parte inferior */
+}
 * {
     padding: 0;
     margin: 0;
@@ -25,6 +28,10 @@ body {
     background-color: var(--body-bg);
     color: var(--text-color);
     padding-top: var(--nav-height);
+    border: 10px solid red;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
 }
 
 
@@ -75,7 +82,13 @@ img {
     justify-content: space-between;
 }
 
-
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color);
+    height: var(--nav-height);
+}
 
 .nav-wrapper {
     position: fixed;
@@ -125,7 +138,9 @@ img {
     text-transform: uppercase;
     font-weight: 700;
 }
+
 .hero_main{
+    margin-top: 20px;
     display: flex;
     background-image: url(../Recursos/hero.png);
     border-radius: 1rem;
@@ -309,3 +324,70 @@ img {
     border: 2px solid #fff;
     border-radius: 20px;
 }
+
+/*Pie de pagina*/
+.footer {
+    background-color: #000000;
+    padding: 1em 0;
+    text-align: center;
+    margin-top: auto;
+}
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+.icon-elem{
+    list-style: none;
+
+}
+.icon{
+    color: white;
+    font-size: 32px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: 0.5s
+}
+.icon:hover{
+    transform: translateY(-10px);
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+.menu-elem{
+    list-style: none;
+}
+.menu-icon{
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+.menu-icon:hover{
+    opacity: 1;
+}
+.text{
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+}
+.main-color{
+    color:red;
+    color: var(--main-color);
+}
+main {
+    flex: 1; /* Toma el espacio restante entre header y footer */
+}
+
