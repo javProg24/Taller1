@@ -29,12 +29,7 @@ th, #inicio{
     border-top: 2px solid #292C38;
     
 }
-.white{
-    color: #fff;
-}
-.gray{
-    color: #8C8F9F;
-}
+
 table, th, td {
     border:3px solid #7492A3;
     background-color: #2B2F3B;
