@@ -11,68 +11,45 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
     font-family: sans-serif;
 }
-
-html {
-    font-size: 16px;
+section:not(:last-of-type) {
+    position: relative; /* Permite el posicionamiento relativo */
+    bottom: 50px; /* Ubica la sección en la parte inferior */
 }
-
-body {
-    padding: 10%;
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-family: "Cairo", sans-serif;
-    background-color: var(--body-bg);
-    color: var(--text-color);
-    padding-top: var(--nav-height);
+    background-color: #221f1f;
 }
-
-
-table {
-    padding: 30px;
-
-}
-
-td{
-    width: 300px;
-    padding: 10px;
-    
-
-}
-tr{
-    border-radius: 20%;
-    border-color: red;
+html{
+    font-size: 16px;
 }
 h1{
     color: white;
     margin-top: 20px;
+    margin-bottom: 40px;
+}
+h2{
+    color: white;
+    margin-top: 50px;
     margin-bottom: 20px;
 }
-
 a {
     text-decoration: none;
     color: unset;
 }
-
 img {
     border-radius: 10%;
     border-color: red;
-
 }
-
-.main-color {
-    color: var(--main-color);
-}
-
 .container {
     max-width: 1920px;
-    padding: 2 40px;
+    padding: 0 40px;
     margin: auto;
-    justify-content: space-between;
 }
-
-
-
 .nav-wrapper {
     position: fixed;
     top: 0;
@@ -81,135 +58,57 @@ img {
     z-index: 99;
     background-color: #000000;
 }
-
-
-.h_header {
+.nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: var(--text-color);
     height: var(--nav-height);
-    padding-left: 2rem;
 }
-.h__right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-}
-
-.h_header a {
+.nav a{
     color: var(--text-color);
-
 }
-
-.logo {
+.logo{
     font-size: 2rem;
     font-weight: 900;
 }
-
-.nav-menu {
+.nav-menu{
     list-style-type: none;
     display: flex;
     align-items: center;
     padding: 0 20px;
 }
-
-.nav-menu li ~ li {
+.nav-menu li~li{
     margin-left: 30px;
 }
-
-.nav-menu a {
+.nav-menu a{
     text-transform: uppercase;
     font-weight: 700;
 }
-
-.nav-menu a:hover {
-    color:#c0392b;
-    transition: color 0.3s ease-in-out;
-}
-
-.hero_main{
-    display: flex;
-    background-image: url(../Recursos/hero.png);
-    border-radius: 1rem;
-    background-size: 100% 100%;
-    background-position: center;
-    width: 100%;
-    height: 18rem;
-    transform: scale(1);    
-    transition: transform 0.3s ease-in-out; 
-    
-}
-
-.hero_main:hover {
-    transform: scale(1.1); /* Escala al hacer hover */
-}
-
-.hero_estreno{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    width: 100%;
-    position: relative;
-    padding: 2rem;
-}
-
-.hero_text h2{
-    color: #000000;
-    font-weight: 700;
-}
-
-.hero_text{
-    display: flex;
-    background-color: rgb(222, 186, 7);
-    outline: 2px solid rgb(222, 186, 7);
-    border-radius: 1rem;
-    width: 300px;
-    height: 50px;
-    border: 2px dashed black;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: absolute;
-    bottom: -1rem; 
-    left: 50%;
-    transform: translateX(-50%); 
-    white-space: nowrap;
-}
-
-
 .h1-hover h1:hover{
-    color: var(--main-color);
+    color: var(--text-color);
 }
-
-.pelicula-infos {
+.pelicula-infos{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: calc(var(--space-top) / 2);
+    margin-top: calc(var(--space-top)/2);
 }
-
-.pelicula-info {
+.pelicula-info{
     display: flex;
     align-items: center;
     font-size: 0.8rem;
     font-weight: 600;
 }
-
-.pelicula-info span {
+.pelicula-info span{
     margin-left: 5px;
 }
-
 .pelicula-info i {
     color: var(--main-color);
 }
-
 .pelicula-info ~ .pelicula-info {
     margin-left: 5px;
 }
-
-
 .pelicula-item {
     display: block;
     position: relative;
@@ -217,7 +116,6 @@ img {
     padding-top: 140%;
     cursor: pointer;
 }
-
 .pelicula-item img {
     position: absolute;
     top: 0;
@@ -225,11 +123,9 @@ img {
     width: 100%;
     transition: transform 0.3s linear;
 }
-
 .pelicula-item:hover img {
     transform: scale(1.2);
 }
-
 .pelicula-item-content {
     position: absolute;
     bottom: 0;
@@ -238,7 +134,6 @@ img {
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.8);
 }
-
 .pelicula-item-content::before {
     content: "";
     position: absolute;
@@ -248,30 +143,25 @@ img {
     height: 100px;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
 }
-
 .pelicula-item-title {
     color: var(--text-color);
     font-size: 1.5rem;
     position: relative;
     font-weight: 700;
 }
-
-
-/* SECTION HERO PAG-MOVIE*/
-
+h3{
+    margin-bottom: 10px;
+}
 .hero{
     padding: 1rem;
     display: flex;
     justify-content: center;
 
 }
-
 .hero__description{
     padding: 1rem;
     display: flex;
     gap: 3rem;
-
-    
 }
 
 .hero__description h1{
@@ -280,44 +170,104 @@ img {
     text-shadow: 4px 4px 0 rgb(0, 0, 0);
     
 }
-
 .description-left{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
 }
-
 .description__right{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
 .description__right h3{
     
     display: flex;
-    color: #fff;
+    color: #ffffff;
     padding-top: 0.7rem;
     white-space: 0.1rem;
-    margin-bottom: 20px;
 }
-
 .description__right p{
     display: flex;
-    color: #8C8F9F;
+    color: #cbcbcf;
     padding: 0.3rem;
     white-space: 0.1rem;
 }
-
 .iframe{
     gap: 2rem;
     border: 2px solid #fff;
     border-radius: 20px;
     height: 300px
 }
-
 .image{
     border: 2px solid #fff;
     border-radius: 20px;
+}
+
+
+
+
+
+.footer {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+    
+}
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+.icon-elem{
+    list-style: none;
+
+}
+.icon{
+    color: white;
+    font-size: 32px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: 0.5s
+}
+.icon:hover{
+    transform: translateY(-10px);
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+.menu-elem{
+    list-style: none;
+}
+.menu-icon{
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+.menu-icon:hover{
+    opacity: 1;
+}
+.text{
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+}
+.main-color{
+    color:red;
+    color: var(--main-color);
 }
