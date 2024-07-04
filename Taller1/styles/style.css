@@ -277,16 +277,17 @@ a {
 }
 
 .hero__description h1{
-    justify-content: center;
+    justify-content: flex-start;
     font-size: 2.5rem;
     text-shadow: 4px 4px 0 rgb(0, 0, 0);
-    
+    position: relative;
 }
 .description-left{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1rem;
+    
 }
 .description__right{
     display: flex;
