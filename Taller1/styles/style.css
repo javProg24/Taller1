@@ -31,7 +31,8 @@ body{
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     padding-top: var(--nav-height);
-    color: var(--text-color);
+    margin-top:0px;
+    margin-bottom: 0px;
 }
 section:not(:last-of-type) {
     position: relative; /* Permite el posicionamiento relativo */
@@ -158,14 +159,16 @@ h2{
     border-radius: 1rem; /* Bordes redondeados */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para darle un poco de elevación */
 }
+/*-------------------------------------------------------------------------------*/
 /*Tabla*/
-table {
+table tr{
     padding: 0px;
+    width: 10em;
 }
-
 td{
     width: 300px;
     padding: 10px;
+    text-align: center;
 }
 tr{
     border-radius: 20%;
@@ -176,18 +179,19 @@ tr{
     align-items: center;
     flex-wrap: wrap;
     margin-top: calc(var(--space-top)/2);
+    color: var(--text-color);
+    justify-content: center; 
 }
 .pelicula-info{
     display: flex;
     align-items: center;
     font-size: 0.8rem;
     font-weight: 600;
+    justify-content: center;
 }
 .pelicula-info span{
     margin-left: 5px;
-}
-.pelicula-info i{
-    color: var(--main-color);
+    text-align: center;
 }
 .pelicula-info ~ .pelicula-info{
     margin-left: 5px;
@@ -198,16 +202,20 @@ tr{
     overflow: hidden;
     padding-top: 140%;
     cursor: pointer;
+    text-align: center;
 }
 .pelicula-item img{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    height: auto;
     transition: transform 0.3s linear;
 }
 .pelicula-item:hover img{
     transform: scale(1.2);
+    max-width: 100%;
+    height: auto;
 }
 .pelicula-item-content {
     position: absolute;
@@ -216,6 +224,7 @@ tr{
     width: 100%;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
 }
 .pelicula-item-content::before {
     content: "";
@@ -231,7 +240,9 @@ tr{
     font-size: 1.5rem;
     position: relative;
     font-weight: 700;
+    text-align: center;
 }
+/*------------------*/
 .description__right{
     display: flex;
     flex-direction: column;
@@ -259,6 +270,8 @@ tr{
 img {
     border-radius: 10%;
     border-color: red;
+    max-width: 100%;
+    height: auto;
 }
 a {
     text-decoration: none;
@@ -299,7 +312,6 @@ a {
     justify-content: center;
 }
 .description__right h3{
-    
     display: flex;
     color: #ffffff;
     padding-top: 0.7rem;
