@@ -141,6 +141,7 @@ h2{
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: left;
+    color: white;
 }
 .h1-hover h1:hover{
     color: var(--main-color);
@@ -268,17 +269,21 @@ a {
     padding: 1rem;
     display: flex;
     justify-content: center;
-
 }
 .hero__description{
     padding: 1rem;
     display: flex;
     gap: 3rem;
 }
-
 .hero__description h1{
     justify-content: flex-start;
     font-size: 2.5rem;
+    text-shadow: 4px 4px 0 rgb(0, 0, 0);
+    position: relative;
+}
+.hero__description h2{
+    justify-content: flex-start;
+    font-size: 30px;
     text-shadow: 4px 4px 0 rgb(0, 0, 0);
     position: relative;
 }
@@ -287,7 +292,6 @@ a {
     flex-direction: column;
     justify-content: flex-start;
     gap: 1rem;
-    
 }
 .description__right{
     display: flex;
