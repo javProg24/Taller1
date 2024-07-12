@@ -92,6 +92,32 @@ main{
 .hero_main:hover {
     transform: scale(1.1); /* Escala al hacer hover */
 }
+/*--------------DULCERIA------------------*/
+.hero_main_d{
+    display: flex;
+    background-image: url(../Recursos/dulceria.png);
+    border-radius: 1rem;
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100%;
+    height: 18rem;
+    transform: scale(1);    
+    transition: transform 0.3s ease-in-out; 
+}
+.hero_main_d:hover {
+    transform: scale(1.1); 
+
+}
+/***/
+p {
+    color: #fff;
+}
+
+h4{
+    color: #fff;
+}
+/**/
+/*------------------------------------------------------*/
 .hero_main{
     margin-top: 20px;
     display: flex;
@@ -386,3 +412,131 @@ a {
     color:red;
     color: var(--main-color);
 }
+/*--------------Seccion del login------------------*/
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background: url(../Recursos/Cine/Fondo\ de\ cine.jpg) no-repeat;
+}
+/* .contenedor{
+    position: relative;
+    width: 400px;
+    border: 2px solid rgba(255,255,255, .6);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+aside#center{
+    width: 400px; height: 480px;
+    float: left;
+    position: relative;
+    display: flex;
+    border: 2px solid rgba(255,255,255, .6);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    justify-content: center;
+    align-items: center;
+}
+aside#center h2{
+    font-size: 2.3rem;
+    color: #fff;
+    text-align: center;
+}
+.input-center{
+    position: relative;
+    margin: 30px 0px;
+    width: 300px;
+    border-bottom: 2px solid #fff;
+}
+.input-center label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .6s;
+    font-weight: bold;
+}
+input:focus~label,
+input:valid~label{
+    top: -5px;
+}
+.input-center input{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: -35px 0 5px;
+    color: #fff;
+}
+.input-center i{
+    position: absolute;
+    color: #fff;
+    font-size: 1.6rem;
+    top: 19px;
+    right: 8px;
+}
+.olvidar{
+    margin: -10px 0 15px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.olvidar label input{
+    margin: 3px;
+}
+.olvidar label a{
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+    font-size: .9em;
+}
+.olvidar label a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 45px;
+    border-radius: 40px;
+    background-color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    font-size: 1rem;
+    transition: .4s;
+}
+button:hover{
+    opacity: .9;
+}
+.registrar{
+    font-size: .8rem;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.registrar p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: .3s;
+}
+.registrar p a:hover{
+    text-decoration: underline;
+}
+/*----------------------------------*/
