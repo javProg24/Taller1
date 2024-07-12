@@ -413,7 +413,7 @@ a {
     color: var(--main-color);
 }
 /*--------------Seccion del login------------------*/
-section{
+.section-login{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -425,17 +425,6 @@ section{
     background-size: cover;
     background: url(../Recursos/Cine/Fondo\ de\ cine.jpg) no-repeat;
 }
-/* .contenedor{
-    position: relative;
-    width: 400px;
-    border: 2px solid rgba(255,255,255, .6);
-    border-radius: 20px;
-    backdrop-filter: blur(15px);
-    height: 480px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 aside#center{
     width: 400px; height: 480px;
     float: left;
