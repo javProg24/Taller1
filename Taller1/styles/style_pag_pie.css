@@ -230,7 +230,7 @@ body{
     box-sizing: border-box; /* Incluye padding en el ancho total */
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .formulario__grupo {
         flex-direction: column; /* Cambia a una columna en pantallas más pequeñas */
         
