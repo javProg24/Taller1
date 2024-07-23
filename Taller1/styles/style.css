@@ -435,3 +435,7 @@ header{
     margin: 0px;
     border: none;
 }
+
+iframe::-webkit-scrollbar {
+    display: none; /* Para Chrome, Safari y Opera */
+}
