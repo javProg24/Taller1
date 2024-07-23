@@ -19,6 +19,8 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
+
 html{
     font-size: 16px;
 }
@@ -86,7 +88,6 @@ section:not(:last-of-type) {
     display: flex; 
     align-items: center; 
     padding: 10px;
-
 }
 
 .nav .logo-cine img {
@@ -118,6 +119,7 @@ main{
     flex-direction: column;
     align-items: center;
 }
+
 .hero_main:hover {
     transform: scale(1.1); 
 
@@ -354,12 +356,14 @@ a {
 
 /*Descripcion de cada pelicula*/
 .hero{
-    padding: 1rem;
     display: flex;
     justify-content: center;
+    padding: 0%;
+
 }
+
 .hero__description{
-    padding: 1rem;
+    padding: 0%;
     display: flex;
     gap: 3rem;
 }
@@ -426,8 +430,8 @@ header{
 
 .nav-style iframe{
     width: 100% !important;
-    height: 100% !important;
-    border: none;
+    height: 70px !important;
     padding: 0px;
     margin: 0px;
+    border: none;
 }
